@@ -9,9 +9,9 @@ vv create
 
 Prompt | Text to enter 
 ------------ | -------------
-Name of new site directory: | TKTKNAME
+Name of new site directory: | mwcir
 Blueprint to use (leave blank for none or use largo): | largo
-Domain to use (leave blank for largo-umbrella.dev): | TKTKNAME.dev
+Domain to use (leave blank for largo-umbrella.dev): | investigatemidwest.dev *this is the main site of the umbrella*
 WordPress version to install (leave blank for latest version or trunk for trunk/nightly version): | *hit [Enter]*
 Install as multisite? (y/N): | n
 Install as subdomain or subdirectory? : | subdomain
@@ -23,15 +23,15 @@ Enable WP_DEBUG and WP_DEBUG_LOG (y/N): | N
 
 After reviewing the options and creating the new install, partake in the following steps:
 
-1. `cd` to the directory `TKTKNAME/` in your VVV setup
-2. `git clone git@github.com:INN/umbrella-TKTKNAME.git`
-3. Copy the contents of the new directory `umbrella-TKTKNAME/` into `htdocs/`, including all hidden files whose names start with `.` periods.
-	- the easy way to do this is: `rsync -rv umbrella-TKTKNAME/ htdocs`
+1. `cd` to the directory `mwcir/` in your VVV setup
+2. `git clone git@github.com:INN/umbrella-mwcir.git`
+3. Copy the contents of the new directory `umbrella-mwcir/` into `htdocs/`, including all hidden files whose names start with `.` periods.
+	- the easy way to do this is: `rsync -rv umbrella-mwcir/ htdocs`
 4. `cd htdocs` to move to the folder where the umbrella now lives
 5. `git submodule update --init` to pull down all of the submodules you need (including, crucially, the tools repo)
 6. `workon fabric`
 7. `fab production wp.fetch_sql_dump` (or download via FTP if this doesn't work)
 8. `fab vagrant.reload_db:mysql.sql`
-9. Search and replace 'TKTKNAME.wpengine.com' --> 'TKTKNAME.dev' in the db (options for doing this are covered in the [largo umbrella setup instructions](https://github.com/INN/docs/blob/master/projects/largo/umbrella-setup.md)
+9. Search and replace 'mwcir.wpengine.com' --> 'investigatemidwest.dev' in the db (options for doing this are covered in the [largo umbrella setup instructions](https://github.com/INN/docs/blob/master/projects/largo/umbrella-setup.md)
 10. Optionally, you may want to pull down recent uploads so you have images, etc. to work with locally.
-11. Visit TKTKNAME.dev in your browser and you should see the site!
+11. Visit investigatemidwest.dev in your browser and you should see the site!
