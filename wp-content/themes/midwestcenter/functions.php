@@ -31,7 +31,7 @@ add_filter('leaky_paywall_userdata_before_user_create', 'zeen101_force_email_for
 function zeen101_force_email_for_new_user( $userdata ) {
 	$userdata['user_login'] = $userdata['user_email'];
 	return $userdata;
-
+}
 
 
 
