@@ -6,6 +6,17 @@
 
 
 
+
+/**
+ * get other scripts
+ */
+ function mwcir_enqueue() {
+	wp_enqueue_script( 'inn-tools', get_stylesheet_directory_uri() . '/js/mwcir.js', array( 'jquery' ), '1.1', true );
+}
+add_action( 'wp_enqueue_scripts', 'mwcir_enqueue' );
+
+
+
 /* return user to previous page after they've logged in */
 
 add_filter( 'leaky_paywall_login_form_args', 'zeen101_login_referrer_redirect' );
