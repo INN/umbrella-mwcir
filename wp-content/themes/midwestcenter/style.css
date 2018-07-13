@@ -24,6 +24,27 @@ Version:        0.1.0
   }
 }
 
+/* ---- FIXING LARGO HEADER MARGIN WEIRDNESS ---- */
+
+@media only screen and (max-width: 979px) {
+	body.normal.single-post article.post > header,
+	body.normal.page article.post > header,
+	body.normal.single-post article.page > header,
+	body.normal.page article.page > header {
+		margin: 24px 6.38297872%;
+	}
+}
+
+@media only screen and (max-width: 529px) {
+	body.normal.single-post article.post > header,
+	body.normal.page article.post > header,
+	body.normal.single-post article.page > header,
+	body.normal.page article.page > header {
+		margin: 24px 0;
+	}
+}
+
+
 /* ---- LEAKY PAYWALL ---- */
 
 .leaky_paywall_message_wrap {
@@ -61,7 +82,9 @@ Version:        0.1.0
 
 
 
-
+/* 
+*** SUBSCRIPTION OPTIONS PAGE
+*/
 
 h2.subscription-options-title {
 	display:none;
@@ -129,6 +152,10 @@ h2.subscription-options-title {
 	width: 100%;
 	margin-top	30px;
 	color: #666;
+}
+
+.leaky-paywall-subscription-details-wrapper {
+	display:none;
 }
 
 
@@ -208,7 +235,9 @@ h2.subscription-options-title {
 
 
 
-/* NAG REMINDER (BOTTOM OF PAGE) */
+/* 
+*** NAG REMINDER (BOTTOM OF PAGE) 
+*/
 
 #issuem-leaky-paywall-articles-remaining-nag {
 	display: block;
@@ -328,7 +357,9 @@ h2.subscription-options-title {
 
 
 
-/* HARD WALL AFTER EXPIRATION */
+/* 
+*** HARD WALL AFTER EXPIRATION 
+*/
 
 #issuem-leaky-paywall-articles-zero-remaining-nag {
 	display: block;
