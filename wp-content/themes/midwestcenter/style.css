@@ -126,11 +126,11 @@ h2.subscription-options-title {
 }
 
 .leaky_paywall_subscription_allowed_content {
-	display:none;
+/*	display:none;*/
 	border-top: none;
 	border-bottom: none;
-	margin: 1em 0;
-	padding: 1em 0;
+	margin: 0;
+	padding: 0;
 }
 
 .leaky_paywall_subscription_allowed_content p {
@@ -495,11 +495,12 @@ h2.subscription-options-title {
     margin: 5px;
 }
 
-.leaky-paywall-payment-button a, .stripe-button-el, .stripe-button-el span {
+#leaky-paywall-submit, .leaky-paywall-payment-button a, .stripe-button-el, .stripe-button-el span {
     display: block;
-    height: 25px !important;
+    height: auto !important;
     line-height:1rem !important;
     background: #32A3E4 !important;
+    font-size:1rem !important;
     color: #fff;
     padding: 7px 15px !important;
     border-radius: 4px;
@@ -510,6 +511,7 @@ h2.subscription-options-title {
     font-weight:bold !important;
     text-shadow:none !important;
     position: relative;
+    min-height:inherit !important;
 }
 
 
