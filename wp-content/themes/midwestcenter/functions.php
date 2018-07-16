@@ -69,11 +69,18 @@ function zeen101_show_level_benefits_on_card( $allowed_content, $level_id, $leve
 		case 1:
 			$output = '<ul>';
 			$output .= '<li>Access to all InvestigateMidwest stories.</li>';
-			$output .= '<li>Platinum Benefit #2</li>';
-			$output .= '<li>Platinum Benefit #3</li>';
+			$output .= '<li>Access to all databases.</li>';
+			$output .= '<li>Special subscriber-only InvestigateMidwest newsletter.</li>';
 			$output .= '</ul>';
 			break;
-		
+		case 2:
+			$output = '<ul>';
+			$output .= '<li>Access to all InvestigateMidwest stories.</li>';
+			$output .= '<li>Access to all databases.</li>';
+			$output .= '<li>Special subscriber-only InvestigateMidwest newsletter.</li>';
+			$output .= '</ul>';
+			break;
+
 		default:
 			$output = $allowed_content;
 			break;
