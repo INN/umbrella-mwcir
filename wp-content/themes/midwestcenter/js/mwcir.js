@@ -1,6 +1,6 @@
 jQuery(document).ready( function($) {
 
-	$('#issuem-leaky-paywall-articles-remaining-subscribe-link').html('<a href="https://investigatemidwest.mwcir.test/subscription-options/">Subscribe now</a>');
+	$('#issuem-leaky-paywall-articles-remaining-subscribe-link').html('<a href="/subscription-options/">Subscribe now</a>');
 
 
 
