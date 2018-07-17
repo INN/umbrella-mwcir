@@ -496,12 +496,15 @@ h2.subscription-options-title {
     margin: 5px;
 }
 
-#leaky-paywall-submit, .leaky-paywall-payment-button, button.stripe-button-el {
+#leaky-paywall-submit, .leaky-paywall-payment-button, .stripe-button-el {
 	-webkit-box-shadow: none !important;
     -moz-box-shadow: none !important;
     -ms-box-shadow: none !important;
     -o-box-shadow: none !important;
     box-shadow: none !important;
+    background-image:none !important;
+    border:0 !important;
+    border-width:0 !important;
 }
 
 .leaky-paywall-payment-button a, .stripe-button-el span {
