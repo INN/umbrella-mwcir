@@ -20,5 +20,9 @@ jQuery(document).ready( function($) {
 	$('#issuem-leaky-paywall-articles-zero-remaining-nag #issuem-leaky-paywall-articles-remaining').empty();
 
 	$('#issuem-leaky-paywall-articles-zero-remaining-nag #issuem-leaky-paywall-articles-remaining').html('<p>Hey there. You\'ve reached the maximum number of freebies we have to offer today. To continue reading, please log in.</p><p>Not a subscriber? Join today for more access to stories, data and maps. </p>');
+
+
+
+	$('#option-2 .leaky_paywall_subscription_price p strong').append('— discounted from $96/year');
 	
 });
