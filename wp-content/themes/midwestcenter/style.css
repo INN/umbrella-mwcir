@@ -52,9 +52,16 @@ header .widget {
 	margin-bottom: 0px;
 }
 
+#site-header {
+	position:relative;
+}
+
 #site-header aside {
     max-width: 320px;
     float: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .homepage-button {
@@ -563,6 +570,12 @@ h2.subscription-options-title {
 /*
 ** MEDIA QUERIES
 */
+
+@media only screen and (max-width: 979px) {
+	#site-header img {
+		width: 50%;
+	}
+}
 
 @media only screen and (max-width: 768px) {
 	#issuem-leaky-paywall-articles-remaining-nag {
