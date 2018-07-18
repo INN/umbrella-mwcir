@@ -62,24 +62,24 @@ add_filter( 'leaky_paywall_subscription_options_allowed_content', 'zeen101_show_
 function zeen101_show_level_benefits_on_card( $allowed_content, $level_id, $level ) {
 	switch ( $level_id ) {
 		case 0:
-			$output = '<ul>';
-			$output .= '<li>Access to all InvestigateMidwest stories.</li>';
-			$output .= '</ul>';
+			$output = '<p>Sign up for the Investigate Midwest newsletter for unlimited access to our stories (excludes access to databases).</p>';
 			break;
 		case 1:
 			$output = '<ul>';
-			$output .= '<li>Access to all InvestigateMidwest stories.</li>';
-			$output .= '<li>Access to all databases.</li>';
-			$output .= '<li>Special subscriber-only InvestigateMidwest newsletter.</li>';
+			$output .= '<li>Access to all Investigate Midwest stories.</li>';
+			$output .= '<li>Access to all datasets.</li>';
+			$output .= '<li>Special subscriber-only Investigate Midwest newsletter.</li>';
 			$output .= '</ul>';
 			break;
 		case 2:
 			$output = '<ul>';
-			$output .= '<li>Access to all InvestigateMidwest stories.</li>';
-			$output .= '<li>Access to all databases.</li>';
-			$output .= '<li>Special subscriber-only InvestigateMidwest newsletter.</li>';
+			$output .= '<li>Access to all Investigate Midwest stories.</li>';
+			$output .= '<li>Access to all datasets.</li>';
+			$output .= '<li>Special subscriber-only Investigate Midwest newsletter.</li>';
 			$output .= '</ul>';
 			break;
+		case 3:
+			$output = '<p>Donate $100 or more to receive 1 year of access to premium level content and datasets.</p>';
 
 		default:
 			$output = $allowed_content;
