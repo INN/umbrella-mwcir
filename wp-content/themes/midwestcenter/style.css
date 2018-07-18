@@ -81,6 +81,12 @@ header .widget {
 	line-height: 2rem;
 }
 
+.donate-btn {
+	font-weight:bold;
+	padding:0 10px;
+	background-color:#f89406;
+}
+
 
 
 /* ---- LEAKY PAYWALL ---- */
@@ -368,6 +374,7 @@ h2.subscription-options-title {
 	background-color:#c00;
 	text-transform:uppercase;
 	width: auto;
+	margin:0.3em;
 	padding: 2px 10px 0;
 	vertical-align: top;
 	height: 3.5rem;
@@ -391,6 +398,10 @@ h2.subscription-options-title {
 #issuem-leaky-paywall-articles-remaining-nag #issuem-leaky-paywall-articles-remaining-login-link a {
 	color: #44ccff;
 	text-decoration: none;
+}
+
+#issuem-leaky-paywall-articles-remaining-nag #issuem-leaky-paywall-articles-remaining-login-link a:hover {
+	text-decoration: underline;
 }
 
 

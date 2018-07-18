@@ -24,5 +24,9 @@ jQuery(document).ready( function($) {
 
 
 	$('#option-2 .leaky_paywall_subscription_price p strong').append('— discounted from $96/year');
+
+
+
+	$('.donate-btn').html('<a href="/subscription-options/">SUBSCRIBE</a>');
 	
 });
