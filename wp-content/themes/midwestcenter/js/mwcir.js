@@ -14,6 +14,8 @@ jQuery(document).ready( function($) {
 	  $(this).parent().remove();
 	});
 
+	$('#issuem-leaky-paywall-articles-remaining-login-link a').append('.');
+
 
 
 

@@ -87,3 +87,16 @@ function zeen101_show_level_benefits_on_card( $allowed_content, $level_id, $leve
 	}
 	return $output;
 }
+
+
+/* paywall ignores editors and authors */
+add_filter( 'leaky_paywall_current_user_can_view_all_content', 'zeen101_allow_access_leaky_paywall_content_by_cap' );
+function zeen101_allow_access_leaky_paywall_content_by_cap( $capability ) {
+	// for contributors
+	$capability = 'delete_posts';
+	// for authors
+	// $capability = 'publish_posts';
+	// for editors
+	// $capability = 'delete_others_posts';
+	return $capability;
+}
