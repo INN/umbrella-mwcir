@@ -431,7 +431,7 @@ h2.subscription-options-title {
 }
 
 div#issuem-leaky-paywall-articles-remaining::before {
-    content: url(/wp-content/uploads/2013/01/logo-Midwest-color-horizontal-4web-md-336x101.gif);
+/*    content: url(/wp-content/uploads/2013/01/logo-Midwest-color-horizontal-4web-md-336x101.gif);*/
     display: block;
     text-align: center;
     margin: 0 auto 20px;
