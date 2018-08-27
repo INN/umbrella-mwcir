@@ -62,7 +62,7 @@ add_filter( 'leaky_paywall_subscription_options_allowed_content', 'zeen101_show_
 function zeen101_show_level_benefits_on_card( $allowed_content, $level_id, $level ) {
 	switch ( $level_id ) {
 		case 0:
-			$output = '<p>Sign up for the Investigate Midwest newsletter for unlimited access to our stories (excludes access to databases).</p>';
+			$output = '<p>Register for free to access most of our stories, receive alerts and newsletters.</p>';
 			break;
 		case 1:
 			$output = '<ul>';
@@ -76,6 +76,7 @@ function zeen101_show_level_benefits_on_card( $allowed_content, $level_id, $leve
 			$output .= '<li>Access to all Investigate Midwest stories.</li>';
 			$output .= '<li>Access to all datasets.</li>';
 			$output .= '<li>Special subscriber-only Investigate Midwest newsletter.</li>';
+			$output .= '<li>Access to invitation-only events and early previews of stories.</li>';
 			$output .= '</ul>';
 			break;
 		case 3:
