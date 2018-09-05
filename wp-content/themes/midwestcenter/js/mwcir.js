@@ -21,7 +21,7 @@ jQuery(document).ready( function($) {
 
 	$('#issuem-leaky-paywall-articles-zero-remaining-nag #issuem-leaky-paywall-articles-remaining').empty();
 
-	$('#issuem-leaky-paywall-articles-zero-remaining-nag #issuem-leaky-paywall-articles-remaining').html('<p>Hey there. You\'ve reached the maximum number of freebies we have to offer today. To continue reading, please log in.</p><p>Not a subscriber? Join today for more access to stories, data and maps. </p>');
+	$('#issuem-leaky-paywall-articles-zero-remaining-nag #issuem-leaky-paywall-articles-remaining').html('<p>You\'ve reached your limit. To continue reading, please log in. </p><p>Not a subscriber? Join today for more access to stories, data and other great content. <strong>You can register today for free.</strong></p>');
 
 
 
