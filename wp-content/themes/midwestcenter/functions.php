@@ -101,3 +101,41 @@ function zeen101_allow_access_leaky_paywall_content_by_cap( $capability ) {
 	// $capability = 'delete_others_posts';
 	return $capability;
 }
+ /**
+ * Enqueue specific styles and scripts for midwestcenter child theme
+ */
+function midwestcenter_enqueue_styles(){
+	wp_enqueue_style(
+		'largo-child-styles',
+		get_stylesheet_directory_uri() . '/css/child-style.css',
+		array( 'largo-stylesheet' ),
+		filemtime( get_stylesheet_directory() . '/css/child-style.css' )
+	);
+}
+add_action( 'wp_enqueue_scripts', 'midwestcenter_enqueue_styles' );
+
+/**
+ * Display a subscribe button in the navbars
+ * 
+ * @param str $location The location that this button is placed
+ * 
+ * @return str The formatted subscribe button
+ */
+function midwestcenter_subscribe_button( $location = null ) {
+
+    if( 'sticky' === $location ) {
+
+        printf( '<a class="subscribe-link" href="%1$s"><span>%2$s</span></a>',
+            esc_url( '\/subscription-options\/' ),
+            esc_html( 'Subscribe' )
+        );
+
+    } else {
+
+        printf( '<div class="subscribe-btn"><a href="%1$s">%2$s</a></div>',
+            esc_url( '\/subscription-options\/' ),
+            esc_html( 'Subscribe' )
+        );
+
+    }
+}

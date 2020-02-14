@@ -121,3 +121,4 @@ wp-content/debug.log
 !/wp-content/themes/midwestcenter
 !/wp-content/themes/bigagwatch
 
+wp-content/themes/midwestcenter/node_modules/*

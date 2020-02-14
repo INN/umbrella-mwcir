@@ -1,0 +1,48 @@
+/*
+Theme Name:     Midwest Center for Investigative Reporting
+Theme URI:      http://largoproject.org
+Description:    A child theme for Investigate Midwest based on the Project Largo parent theme.
+Author:         INN
+Author URI:     http://largoproject.org
+Template:       Largo
+Version:        1.0
+*/
+
+@import "variables.less";
+
+.subscribe-btn {
+    float: left;
+    margin: 5px 0 0 10px;
+    background: @green;
+    font-size: 14px;
+    line-height: 2;
+    a {
+        padding: 24px 7px;
+        color: #fff;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &:hover {
+        background: darken(@green, 5%);
+    }
+}
+.subscribe {
+    .subscribe-link {
+        span {
+            padding: 4px 8px;
+            color: #fff;
+            background-color: @green;
+            font-size: 16px;
+            &:hover {
+                background-color: darken(@green, 5%);
+            }
+        }
+        &:hover {
+            background: transparent;
+        }
+    }
+    &:hover {
+        background: transparent;
+    }
+}
