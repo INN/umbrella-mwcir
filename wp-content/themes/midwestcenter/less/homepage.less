@@ -1,3 +1,12 @@
+.sticky-solo {
+	div + .top-tag,
+	div + .entry-title {
+		margin-top: 1rem;
+	}
+	.top-tag + .entry-title {
+		margin-top: 0.5rem;
+	}
+}
 #homepage-bottom {
 	.widget {
 		width: 100%;
@@ -9,5 +18,17 @@
 	.widget.even {
 		float: none;
 		clear: both;
+	}
+}
+.HomepageBlog {
+	article.sticky,
+	#homepage-bottom .widget {
+		padding-bottom: @measure;
+		margin-bottom: @measure;
+		border-bottom: 1px dotted @gray;
+
+		:last-child {
+			margin-bottom: 0;
+		}
 	}
 }
