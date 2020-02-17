@@ -20,37 +20,35 @@ if ( $query->have_posts() ) {
 
 		if ( $sticky && $sticky[0] && ! is_paged() ) {
 			?>
-				<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix sticky entry-content '); ?>>
-					<div class="sticky-solo">
-						<div class="sticky-main-feature row-fluid">
+				<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix sticky entry-content sticky-solo'); ?>>
+					<div class="sticky-main-feature row-fluid">
 
-							<?php // if we have a thumbnail image, show it
-								if ( has_post_thumbnail() ) {
-									?>
-										<div class="<?php largo_hero_class(get_the_ID()); ?>">
-											<a href="<?php the_permalink(); ?>">
-												<?php the_post_thumbnail( 'large' ); ?>
-											</a>
-										</div>
-									<?php
-								} // end thumbnail
-							?>
-
-							<?php largo_maybe_top_term( array( 'post' => $post ) ); ?>
-
-							<h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-							<h5 class="byline"><?php largo_byline( true, false, get_the_ID() ); ?></h5>
-
-							<div class="entry-content">
-								<?php
-									largo_excerpt( $post, 2 );
-									$shown_ids[] = get_the_ID();
+						<?php // if we have a thumbnail image, show it
+							if ( has_post_thumbnail() ) {
 								?>
-							</div>
+									<div class="<?php largo_hero_class(get_the_ID()); ?>">
+										<a href="<?php the_permalink(); ?>">
+											<?php the_post_thumbnail( 'large' ); ?>
+										</a>
+									</div>
+								<?php
+							} // end thumbnail
+						?>
 
-						</div> <!-- end sticky-main-feature -->
-					</div> <!-- end sticky-solo or sticky-related -->
-				</article>
+						<?php largo_maybe_top_term( array( 'post' => $post ) ); ?>
+
+						<h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+						<h5 class="byline"><?php largo_byline( true, false, get_the_ID() ); ?></h5>
+
+						<div class="entry-content">
+							<?php
+								largo_excerpt( $post, 2 );
+								$shown_ids[] = get_the_ID();
+							?>
+						</div>
+
+					</div> <!-- end sticky-main-feature -->
+				</article><!-- end sticky-solo or sticky-related -->
 			<?php 
 		} // is_paged
 	}
