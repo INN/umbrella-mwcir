@@ -20,6 +20,16 @@
 		clear: both;
 	}
 }
+// see https://github.com/INN/umbrella-mwcir/pull/35#issuecomment-587488169
+// overrides styles at <=768px and at 768<=x<=979px
+@media (max-width: 979px) {
+	#homepage-bottom {
+		.widget.odd,
+		.widget.even {
+			padding: 0;
+		}
+	}
+}
 .HomepageBlog {
 	article.sticky,
 	#homepage-bottom .widget {
