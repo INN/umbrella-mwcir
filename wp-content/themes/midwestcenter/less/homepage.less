@@ -42,3 +42,22 @@
 		}
 	}
 }
+#before-footer {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	align-content: flex-start;
+	padding-top: 24px;
+	padding-bottom: 24px;
+	@media ( min-width: 1200px ) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.widget {
+		flex: 0 1 max-content;
+		box-sizing: border-box;
+	}
+}
