@@ -1,0 +1,63 @@
+.sticky-solo {
+	div + .top-tag,
+	div + .entry-title {
+		margin-top: 1rem;
+	}
+	.top-tag + .entry-title {
+		margin-top: 0.5rem;
+	}
+}
+#homepage-bottom {
+	.widget {
+		width: 100%;
+		padding: 0;
+	}
+	.widget.odd {
+		float: none;
+	}
+	.widget.even {
+		float: none;
+		clear: both;
+	}
+}
+// see https://github.com/INN/umbrella-mwcir/pull/35#issuecomment-587488169
+// overrides styles at <=768px and at 768<=x<=979px
+@media (max-width: 979px) {
+	#homepage-bottom {
+		.widget.odd,
+		.widget.even {
+			padding: 0;
+		}
+	}
+}
+.HomepageBlog {
+	article.sticky,
+	#homepage-bottom .widget {
+		padding-bottom: @measure;
+		margin-bottom: @measure;
+		border-bottom: 1px dotted @gray;
+
+		:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+#before-footer {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	align-content: flex-start;
+	padding-top: 24px;
+	padding-bottom: 24px;
+	@media ( min-width: 1200px ) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.widget {
+		flex: 0 1 max-content;
+		box-sizing: border-box;
+	}
+}
