@@ -1,0 +1,19 @@
+@import 'variations.less';
+
+.wp-block-group.is-style-border-top-blue,
+.wp-block-group.is-style-border-top-green,
+.wp-block-group.is-style-border-top-red,
+.wp-block-group.is-style-border-top-orange,
+.wp-block-group.has-background {
+	padding: @measure;
+	:first-child {
+		margin-top: 0;
+	}
+	:last-child {
+		margin-bottom: 0;
+	}
+	margin-bottom: 24px;
+}
+.wp-block-group.has-background {
+	border-radius: 2px
+}
