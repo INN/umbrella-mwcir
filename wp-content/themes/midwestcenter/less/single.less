@@ -193,11 +193,18 @@ body.single {
         }
     }
     &.normal {
-        header {
-            .bottom-header-content {
-                clear: both;
-                margin: 24px 17.0213%;
-                position: relative;
+        article {
+            header {
+                .bottom-header-content {
+                    @media (min-width: 979px) {
+                        clear: both;
+                        margin: 24px 17.0213%;
+                        position: relative;
+                    }
+                    @media (max-width: 978px) and (min-width: 530px) {
+                        margin: 24px 6.382978723%;
+                    }
+                }
             }
         }
     }
